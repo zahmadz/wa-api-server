@@ -16,7 +16,7 @@ Ini adalah REST API untuk mengelola client Whatsapp, seperti login, logout, meng
 
 ## Instalasi Server Requirement
 
-REST API ini membutuhkan:
+**REST API ini membutuhkan:**
 
 *   NodeJS sebagai runtime (wajib menggunakan v14++)
 *   NPM sebagai package manager
