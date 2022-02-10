@@ -14,7 +14,7 @@ Ini adalah REST API untuk mengelola client Whatsapp, seperti login, logout, meng
 
 ## Fitur
 
-<table><tbody><tr><td>Broadcast</td><td>✅</td></tr><tr><td>Schedule Broadcast</td><td>✅</td></tr><tr><td>Scrape Label</td><td>✅</td></tr><tr><td>Scrape Label Contacts</td><td>✅</td></tr><tr><td>Scrape Groups</td><td>✅</td></tr><tr><td>Scrape Groups Contact</td><td>✅</td></tr><tr><td>Broadcast/Message Status</td><td>✅</td></tr></tbody></table>
+<table><tbody><tr><td>Broadcast</td><td>✅</td></tr><tr><td>Schedule Broadcast</td><td>✅</td></tr><tr><td>Scrape Label</td><td>✅</td></tr><tr><td>Scrape Label Contacts</td><td>✅</td></tr><tr><td>Scrape Groups</td><td>✅</td></tr><tr><td>Scrape Groups Contact</td><td>✅</td></tr><tr><td>Broadcast/Message Status (single tick, double tick, double blue tick, failed)</td><td>✅</td></tr></tbody></table>
 
 ## Instalasi Server Requirement
 
