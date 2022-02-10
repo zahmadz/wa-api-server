@@ -7,7 +7,7 @@ Ini adalah REST API untuk mengelola client Whatsapp, seperti login, logout, meng
 ## Quick Link
 
 *   Guide Video (work in progress)
-*   Fitur
+*   [Fitur](#fitur)
 *   List END POINT yang dapat digunakan (work in progress)
 
 ## Fitur
