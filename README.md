@@ -10,7 +10,7 @@ Ini adalah REST API untuk mengelola client Whatsapp, seperti login, logout, meng
 *   [Fitur](#fitur)
 *   [Instalasi Server](#instalasi-server-requirement)
 *   [Instalasi Project / REST API](#instalasi-rest-api)
-*   [List END POINT yang dapat digunakan](#list-end-point) (work in progress)
+*   [Dokumentasi](https://app.swaggerhub.com/apis/wa-restapi/waclientrestapi/1.0.0)
 
 ## Fitur
 
@@ -85,44 +85,3 @@ jika menggunakan mongodb atlas maka ambil koneksi URI menggunakan cara ini: [htt
 ```
 npm start
 ```
-
-## List END POINT
-
-BASE\_URL = http://domain:port/api (contoh: http://localhost:5000/api, [http://apiwa.watzap.com/api](http://apiwa.watzap.com/api)
-
-fetch = BASE\_URL/END\_POINT (contoh: BASE\_URL/auth/init)
-
-```javascript
-fetch("BASE_URL/auth/init", {
-    method: 'POST'
-})
-```
-
-<table><tbody><tr><td>Keterangan</td><td>END POINT</td><td>Method</td><td>Body</td><td>Return</td></tr><tr><td>login client WA</td><td>/auth/init</td><td>POST</td><td><pre><code class="language-json">{
-"userId":&nbsp;"zulzul",
-"whatsappNumber":&nbsp;"082118358997"
-}</code></pre></td><td><pre><code class="language-json">{
- "status": "ok" / "failed"
- "message":
-}</code></pre></td></tr><tr><td>logout client WA</td><td>/auth/logout</td><td>POST</td><td><pre><code class="language-json">{
-"userId":&nbsp;"zulzul",
-"whatsappNumber":&nbsp;"082118358997"
-}</code></pre></td><td><pre><code class="language-json">{
- "status": "ok" / "failed"
- "message",
- "data": {
-          "userId",
-          "082118358997"
- }
-}</code></pre></td></tr><tr><td>cek koneksi WA by whatsappNumber</td><td>auth/connection/:userId/:whatsappNumber</td><td>GET</td><td>-</td><td><pre><code class="language-json">{
- "status": "ok" / "failed"
- "connectionStatus": {
-   "state": "UNAUTHORIZE" / "SCANNING_QR" / "READY",
-   "qrString": , // disisi client, rubah string qr ke gambar
-   "info": // client info (nama, no wa, dll)
- }
-}</code></pre></td></tr><tr><td>cek semua koneksi WA by userId</td><td>/api/auth/connection/:userId</td><td>GET</td><td>-</td><td><pre><code class="language-json">{
- "status": "ok" / "failed"
- "whatsappAccounts": [], // daftar nomor akun wa
- "connections": [] // daftar detail koneksi akun wa
-}</code></pre></td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr><tr><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr></tbody></table>
